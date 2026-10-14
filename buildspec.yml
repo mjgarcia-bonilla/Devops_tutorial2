@@ -9,10 +9,10 @@ phases:
   build:
     commands:
       - echo "Fase build ejecutada el `date`"
+      - python -m unittest -v
   post_build:
     commands:
       - echo "Fase post_build ejecutada el `date`"
-      - python -m unittest -v
 artifacts:
   files:
     - '**/*'
